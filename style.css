@@ -1,0 +1,30 @@
+body {
+    margin: 0;
+    font-family: Corbel, 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', 'DejaVu Sans',
+        'Bitstream Vera Sans', 'Liberation Sans', Verdana, 'Verdana Ref', sans-serif;
+    background: rgb(224, 234, 247);
+    display: grid;
+    grid-template-rows: auto 1fr;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    padding: 20px;
+    height: 60px;
+
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    background-color: rgb(254, 251, 245);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+
+header .logo {
+    height: 100%;
+}
+
+main {
+    padding: 20px;
+}
