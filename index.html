@@ -1,37 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
-<head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <script type="module" src="app.js"></script>
+
+        <!-- put css fonts here -->
+        <link href='https://fonts.googleapis.com/css?family=Amaranth' rel='stylesheet'>
 
 
-    <script type="module" src="app.js"></script>
+        <link rel="stylesheet" href="style.css" />
 
-    <!-- put css fonts here -->
+        <title>My Project</title>
+    </head>
 
-    <link rel="stylesheet" href="style.css" />
+    <body>
+        <header>
+            <h1>Name Tag</h1>
+        </header>
 
-    <title>My Project</title>
-</head>
+        <main>
+            <!-- This section is the controls -->
+            <section>
+                <label>Name</label>
+                <input id="name-input" />
+                <button id="update-button">Update</button>
+<select id="color-dropdown">
+    <option value="red">Red</option>
+    <option value="blue">Blue</option>
+    <option value="green">Green</option>
+</select>
 
-<body>
-    <header>
-        <h1>My Project</h1>
-    </header>
 
-    <main>
-<section>
-    <p>My name is</p>
-    <input> <button>Submit</button>
-</section>
 
-<section>
-    
-</section>
-    </main>
+            </section>
 
-</body>
-
+            <!-- This section has the outputted name tag -->
+            <section id="name-tag-section" class="name-tag red">
+                <h2>Hello!</h2>
+                <p class="intro">My name is</p>
+                <p class="name-display" id="name">Steve</p>
+                </section>
+        </main>
+    </body>
 </html>
