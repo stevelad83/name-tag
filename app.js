@@ -15,15 +15,17 @@ updateButton.addEventListener('click', () => {
     nameDisplay.textContent = nameInput.value;
 });
 
-// const updateButton = document.getElementById('update-button');
-// updateButton.addEventListener('keypress', (e) => {
-//     if (e.key === 'Enter'){
-//         console.log('I am pressing enter!');
-//     }
-//     const nameInput = document.getElementById('name-input');
-//     nameDisplay.textContent = nameInput.value;
 
-// });
+//this is updating the name field every time a key is pressed
+const updateButtons = document.getElementById('update-button');
+document.addEventListener('keydown', (e) => {
+    if (e.key === 'Enter'){
+        console.log('I am pressing enter!');
+    
+    const nameInput = document.getElementById('name-input');
+    nameDisplay.textContent = nameInput.value;
+}
+});
 
 const colorDropdown = document.getElementById('color-dropdown');
 colorDropdown.addEventListener('change', () => {
